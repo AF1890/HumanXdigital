@@ -1,0 +1,173 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 0 auto;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family:'Roboto';
+    background:rgba(22,22,155,0.9);
+}
+
+/*HEADER*/
+header {
+    position: fixed;
+    top: 0;
+    background:rgba(22,22,155,1);
+    width: 100%;
+    height: 100px;
+    /*border-bottom: solid 1px #6D6D6D;*/
+}
+
+/*Partie bloc du Grand titre*/
+#header_container {
+    width: 900px;
+    margin: 0 auto;
+    height: 100px;
+    /*border: solid 1px black;*/
+}
+
+/*Grand titre*/
+h1 {
+    margin: 0px 0 12px 0;
+    padding-top: 10px;
+    font-size: 40px;
+    color: #F90000;
+    /*color: #ED143D;*/
+}
+
+/*NAVIGATION*/
+nav {
+    border-top: solid 1px #808080;
+    padding: 7px;/*marge interieur de cette boxe de 7px*/
+}
+ul {
+    /*border: solid 1px black;*/
+    width: 700px;
+    padding: 0 auto;
+    margin: 0 auto;
+    /*border-left: solid 1px #808080;
+    border-right: solid 1px #808080;*/
+}
+li {
+    display: inline;
+    width: 140px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px 45px 0px 45px;
+}
+a {
+    color: #F90000;
+    text-decoration: none;
+}
+/* Je cible le 2ème lien */
+li:nth-child(2) {
+    border-left: solid 1px #808080;
+    border-right: solid 1px #808080;
+}
+
+/* CONTAINER (qui contient chaque section) */
+#container {
+    width: 870px;
+    height: 0 auto;
+    padding: 15px;
+    padding-top: 110px;
+    /*border: solid 1px black;*/
+    margin: 0 auto;
+    background:url("http://i.imgur.com/LRzZbYs.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;/*je souhaite fixer l'image de fond*/
+}
+section {
+    width: 100%;
+}
+h2 {
+    font-size: 28px;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    color: #F90000;
+}
+h3{
+  color:#b20000;
+}
+p {
+    font-size: 22px;
+    font-style: italic;
+    color:white;
+}
+#about {
+    display: inline-block;
+}
+#about p {
+    width: 870px;
+}
+hr {/*lignes horizontales*/
+    clear: both;
+    background-color: #808080;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+#perfs div{
+    display: inline-block;
+}
+
+#perfs img{
+    width: 400px;
+}
+.infos {
+    float: left;
+    width: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#perfs div img {
+    float: left;
+}
+
+#perfs hr {
+    clear: both;
+    background-color: #808080;
+    width: 35%;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+/* /// FOOTER /// */
+
+footer {
+    width: 100%;
+    height: 100px;
+    /*border: solid 1px black;*/
+    background:rgba(22,22,155,1);
+}
+
+#footercontainer {
+    width:100%;
+    margin: 0 auto;
+    height: 100%;
+}
+#icons {
+    padding:20px 0px 0px 0px;
+    display: inline-block;
+    float: right;
+    
+}
+
+#icons p {
+    float: left;
+    margin: 10px;
+    width: 110px;
+}
+#icons img {
+    float: left;
+    margin-right: 5px;
+    width: 35px;
+}
+
+#icons img:hover { /*pour que l'icone s'éclaircisse lorsque curseur passe dessus*/
+    opacity: 0.5;
+}

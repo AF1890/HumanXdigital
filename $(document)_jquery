@@ -1,0 +1,7 @@
+$(document).ready(function(){
+$('.reservation').on('keyup mouseup', '.quantity', function(){
+  var price=+$(this).closest('.reservation').data('price');
+  var quantity= +$(this).val();
+  $('#Total').text(price * quantity);
+});
+});
